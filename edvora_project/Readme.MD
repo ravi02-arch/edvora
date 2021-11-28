@@ -1,6 +1,14 @@
 INTRODUCTION
 
 - This project is a feed system using FastAPI and Socket.IO to manage a session
+- It display all the names of users active in the session.
+- It requires a user to pass query_string 'username' and 'password' to access the session.
+- The password is 'admin'
+- The user can logout by passing query_string 'username' to /logout end-point.
+
+eg: - API END POINT(GET)
+	- http://3.7.213.105:7863/login?username=Rahul&password=admin
+	- http://3.7.213.105:7863/logout?username=Rohan
  
 APP STRUCTURE
  
@@ -28,6 +36,4 @@ To test the  application, access this url in postman:
 
 	http://localhost:7863
 	
-API END POINT(POST)
-	- /login
-	- /logout
+
